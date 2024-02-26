@@ -63,7 +63,7 @@ def predictor():
     }
 
     # Convert the laptop specifications into a pandas dataframe
-    input_query = pd.DataFrame(data=specifications)
+    input_query = pd.DataFrame(data=[specifications])
 
     print(input_query)
 
@@ -76,4 +76,4 @@ def predictor():
 
 # Run the Flask application
 if __name__ == '__main__':
-    app.run(debug=True, host="192.168.1.6", port=9090)
+    app.run(debug=True, host="192.168.1.5", port=9090)
